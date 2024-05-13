@@ -10,21 +10,18 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "The ref_name is ${{ github.ref_name }}"
-
   publish-app:
     # if: startsWith(github.ref_name, 'app-')
     # secrets: inherit
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Publish app!!"
-
   publish-server:
     # if: startsWith(github.ref_name, 'rpt-server-')
     # secrets: inherit
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Publish server!!"
-
   dockerhub:
     name: "Publish to Dockehub"
     runs-on: ubuntu-20.04
