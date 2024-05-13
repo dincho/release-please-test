@@ -12,15 +12,15 @@ jobs:
       - run: echo "The ref_name is ${{ github.ref_name }}"
 
   publish-app:
-    if: startsWith(github.ref_name, 'app-')
-    secrets: inherit
+    # if: startsWith(github.ref_name, 'app-')
+    # secrets: inherit
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Publish app!!"
 
   publish-server:
-    if: startsWith(github.ref_name, 'rpt-server-')
-    secrets: inherit
+    # if: startsWith(github.ref_name, 'rpt-server-')
+    # secrets: inherit
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Publish server!!"
