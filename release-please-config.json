@@ -1,0 +1,8 @@
+{
+  "release-type": "node",
+  "packages": {
+    ".": {},
+    "app": {},
+    "server": {}
+  }
+}
