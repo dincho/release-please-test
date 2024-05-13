@@ -34,5 +34,6 @@ jobs:
             dincho/release-please-test
           tags: |
             type=ref,event=branch
+            type=ref,event=tag
             type=ref,event=pr
             type=semver,pattern=v{{version}}
